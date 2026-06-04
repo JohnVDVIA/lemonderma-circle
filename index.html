@@ -40,7 +40,7 @@
     -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
     mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);}
   .gtrack{display:flex;gap:16px;width:max-content;animation:marq 25s linear infinite;}
-  .gallery:hover .gtrack{animation-play-state:paused;}
+  .gallery{pointer-events:none;}  /* 터치·클릭해도 흐름 안 멈춤 */
   .gcard{width:172px;flex-shrink:0;border-radius:16px;overflow:hidden;background:#000;box-shadow:0 4px 16px rgba(0,0,0,.16);}
   .gcard video{width:172px;height:306px;object-fit:cover;display:block;}
   @keyframes marq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
